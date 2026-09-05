@@ -2,7 +2,7 @@
 
 <img src="assets/hero.jpg" alt="PcDiag — diagnóstico de PC" width="100%" />
 
-# 🖥️ PcDiag (TechBroswer)
+# PcDiag (TechBroswer)
 
 **Plataforma de diagnóstico de PC e gestão de assistência técnica**
 
@@ -11,10 +11,10 @@ construídos para dar a um técnico (e ao cliente dele) uma resposta honesta
 sobre o que está — e o que **não está** — comprovadamente certo com um
 computador.
 
-[🔗 Acessar o dashboard](https://tech-broswer.vercel.app/) ·
-[⌨️ Testar teclado](https://tech-broswer.vercel.app/ferramentas/teclado) ·
-[🎥 Testar webcam](https://tech-broswer.vercel.app/ferramentas/webcam) ·
-[🔊 Testar áudio](https://tech-broswer.vercel.app/ferramentas/som)
+[Acessar o dashboard](https://tech-broswer.vercel.app/) ·
+[Testar teclado](https://tech-broswer.vercel.app/ferramentas/teclado) ·
+[Testar webcam](https://tech-broswer.vercel.app/ferramentas/webcam) ·
+[Testar áudio](https://tech-broswer.vercel.app/ferramentas/som)
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento%20ativo-brightgreen)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)
@@ -23,18 +23,18 @@ computador.
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Prisma-336791?logo=postgresql&logoColor=white)
 ![License](https://img.shields.io/badge/código--fonte-privado-lightgrey)
 
-**Curtiu o projeto? Deixa uma ⭐ aqui em cima — isso ajuda muito!**
+**Curtiu o projeto? Deixa uma estrela aqui em cima — isso ajuda muito!**
 
 </div>
 
 ---
 
-## 📌 Sobre este repositório
+## Sobre este repositório
 
 Este é o **repositório-vitrine (showcase)** do PcDiag: aqui está a
 documentação, a visão do produto e a arquitetura em alto nível, para quem
 quer conhecer o projeto, acompanhar a evolução ou só dar aquela força com
-uma estrela ⭐.
+uma estrela.
 
 > O código-fonte completo é privado (é um produto comercial em produção,
 > com dados reais de clientes rodando nele). Este repo **não** contém o
@@ -42,7 +42,7 @@ uma estrela ⭐.
 
 ---
 
-## 💡 O problema
+## O problema
 
 Ferramentas de diagnóstico tradicionais adoram te dar um "certificado de
 saúde" bonito mesmo quando não conseguiram medir metade do equipamento.
@@ -58,9 +58,9 @@ nunca aparece como "verde" por omissão.
 
 ---
 
-## 🧩 O que a plataforma entrega
+## O que a plataforma entrega
 
-### 🔎 Motor de diagnóstico (C#, roda de um pendrive, sem instalar nada)
+### Motor de diagnóstico (C#, roda de um pendrive, sem instalar nada)
 
 - **67 testes automatizados em 12 áreas**: CPU, memória, GPU, armazenamento,
   dispositivos/drivers, rede, segurança, bateria, eventos do Windows,
@@ -83,7 +83,7 @@ nunca aparece como "verde" por omissão.
 - **276 testes automatizados** garantindo a lógica de diagnóstico, rodando
   contra inventários sintéticos (sem precisar de hardware real para validar).
 
-### 📊 Dashboard de gestão (Next.js + PostgreSQL)
+### Dashboard de gestão (Next.js + PostgreSQL)
 
 - Cadastro de clientes e equipamentos com histórico completo.
 - **Health Score** por equipamento com tendência histórica e alertas
@@ -98,7 +98,7 @@ nunca aparece como "verde" por omissão.
   catálogo de serviços.
 - **Modo Balcão**: apresentação dos achados junto com o cliente, na loja.
 
-### 🙋 Portal do cliente
+### Portal do cliente
 
 - Acesso por link pessoal, **sem precisar criar conta**.
 - Acompanhamento visual do reparo (recebido → em análise → aguardando
@@ -109,7 +109,7 @@ nunca aparece como "verde" por omissão.
   individualmente, com assinatura digital.
 - Chat com o técnico e contato direto por WhatsApp.
 
-### 🛠️ Ferramentas públicas gratuitas
+### Ferramentas públicas gratuitas
 
 Testes rápidos de hardware direto do navegador, sem instalar nada e sem
 login — pensados para quem só quer confirmar se teclado, câmera ou áudio
@@ -121,7 +121,7 @@ estão funcionando antes de levar o equipamento à assistência:
 
 ---
 
-## 🏗️ Como o diagnóstico funciona por dentro
+## Como o diagnóstico funciona por dentro
 
 O motor segue um pipeline em estágios bem separados — cada peça só faz uma
 coisa, o que permite testar a lógica de diagnóstico inteira sem precisar
@@ -143,7 +143,7 @@ determinística e independente de hardware físico.
 
 ---
 
-## 🧰 Stack técnica
+## Stack técnica
 
 | Camada | Tecnologias |
 |---|---|
@@ -159,7 +159,7 @@ determinística e independente de hardware físico.
 
 ---
 
-## 🔐 Segurança e privacidade por padrão
+## Segurança e privacidade por padrão
 
 - O motor de diagnóstico **não coleta senha, token, cookie, histórico de
   navegação ou conteúdo de arquivo** — só telemetria de hardware/sistema.
@@ -171,20 +171,12 @@ determinística e independente de hardware físico.
 
 ---
 
-## 📸 Um pouco do dia a dia
-
-<div align="center">
-<img src="assets/workspace.jpg" alt="Bancada de trabalho" width="70%" />
-</div>
-
----
-
-## ⭐ Gostou?
+## Gostou?
 
 Esse projeto nasceu para resolver um problema real de assistências
 técnicas: dar um diagnóstico **honesto**, e não só bonito. Se a ideia fez
 sentido pra você, deixa uma estrela no repositório — isso ajuda o projeto
-a ser descoberto por mais gente. 🙌
+a ser descoberto por mais gente.
 
 Feito por [**Gusmares**](https://github.com/Gusmares).
 
