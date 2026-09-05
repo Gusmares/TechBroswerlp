@@ -1,0 +1,13 @@
+# bin/ e 100% gerado pelo build.ps1 (executavel, .config, dlls de sensor e
+# qualquer laudo gerado localmente em bin/Relatorios) - nunca deve ir para
+# o repositorio.
+bin/
+obj/
+
+# Editor / SO
+.vs/
+.vscode/
+*.suo
+*.user
+Thumbs.db
+.DS_Store

@@ -14,14 +14,15 @@ computador.
 [Acessar o dashboard](https://tech-broswer.vercel.app/) ·
 [Testar teclado](https://tech-broswer.vercel.app/ferramentas/teclado) ·
 [Testar webcam](https://tech-broswer.vercel.app/ferramentas/webcam) ·
-[Testar áudio](https://tech-broswer.vercel.app/ferramentas/som)
+[Testar áudio](https://tech-broswer.vercel.app/ferramentas/som) ·
+[Código do motor de diagnóstico](pcdiag-engine/)
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento%20ativo-brightgreen)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)
 ![C%23](https://img.shields.io/badge/C%23-.NET-239120?logo=csharp)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Prisma-336791?logo=postgresql&logoColor=white)
-![License](https://img.shields.io/badge/código--fonte-privado-lightgrey)
+![License](https://img.shields.io/badge/motor%20de%20diagn%C3%B3stico-open%20source-informational)
 
 **Curtiu o projeto? Deixa uma estrela aqui em cima, isso ajuda muito!**
 
@@ -32,13 +33,16 @@ computador.
 ## Sobre este repositório
 
 Este é o **repositório-vitrine (showcase)** do PcDiag: aqui está a
-documentação, a visão do produto e a arquitetura em alto nível, para quem
-quer conhecer o projeto, acompanhar a evolução ou só dar aquela força com
-uma estrela.
+documentação, a visão do produto, a arquitetura em alto nível e o
+[código aberto do motor de diagnóstico](pcdiag-engine/), para quem quer
+conhecer o projeto, acompanhar a evolução ou só dar aquela força com uma
+estrela.
 
-> O código-fonte completo é privado (é um produto comercial em produção,
-> com dados reais de clientes rodando nele). Este repo **não** contém o
-> código da aplicação: só a documentação pública do projeto.
+> O **motor de diagnóstico** (a parte que roda no computador do cliente) é
+> open source, sob [PolyForm Noncommercial](pcdiag-engine/LICENSE.md): veja,
+> compile, teste e contribua. Já o **dashboard/SaaS** (é um produto comercial
+> em produção, com dados reais de clientes rodando nele) continua privado:
+> este repo não contém aquele código.
 
 ---
 
@@ -182,5 +186,6 @@ Feito por [**Gusmares**](https://github.com/Gusmares).
 
 ---
 
-<sub>Este repositório contém apenas documentação e materiais públicos do
-projeto. O código-fonte da aplicação é privado.</sub>
+<sub>Este repositório contém documentação, materiais públicos do projeto e o
+código aberto do motor de diagnóstico (pasta `pcdiag-engine/`). O dashboard/
+SaaS comercial não esta incluído aqui.</sub>

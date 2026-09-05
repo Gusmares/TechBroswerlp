@@ -1,14 +1,15 @@
 # Licença
 
-Este repositório é uma **vitrine (showcase) pública** do projeto PcDiag /
-TechBroswer. Ele contém apenas documentação, textos e imagens de
-divulgação do projeto.
+Este repositório é a **vitrine pública** do projeto PcDiag / TechBroswer, e
+tem duas licenças diferentes dependendo da pasta:
 
-O código-fonte da aplicação (motor de diagnóstico, dashboard, API, banco
-de dados) é **privado e proprietário**, não está incluído aqui e todos os
+- **`pcdiag-engine/`** (código do motor de diagnóstico): licenciado sob
+  [PolyForm Noncommercial 1.0.0](pcdiag-engine/LICENSE.md). Pode ver,
+  compilar, rodar, estudar e contribuir; uso comercial não é permitido.
+- **Todo o resto** (README, textos, imagens de divulgação): disponibilizado
+  apenas para fins de divulgação do projeto. © Gusmares. Não é permitido
+  reutilizar como se fosse de outro produto ou projeto.
+
+O dashboard/SaaS comercial (API, banco de dados, painel do técnico) é
+**privado e proprietário**, não está incluído neste repositório, e todos os
 direitos sobre ele são reservados ao autor.
-
-Todo o conteúdo deste repositório (README, textos e imagens) é
-disponibilizado apenas para fins de divulgação do projeto. © Gusmares.
-Não é permitido reutilizar as imagens ou textos como se fossem de outro
-produto ou projeto.
