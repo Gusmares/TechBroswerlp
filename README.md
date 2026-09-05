@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hero.jpg" alt="PcDiag — diagnóstico de PC" width="100%" />
+<img src="assets/hero.jpg" alt="PcDiag, diagnóstico de PC" width="100%" />
 
 # PcDiag (TechBroswer)
 
@@ -8,7 +8,7 @@
 
 Motor de diagnóstico offline + dashboard de gestão + portal do cliente,
 construídos para dar a um técnico (e ao cliente dele) uma resposta honesta
-sobre o que está — e o que **não está** — comprovadamente certo com um
+sobre o que está, e o que **não está**, comprovadamente certo com um
 computador.
 
 [Acessar o dashboard](https://tech-broswer.vercel.app/) ·
@@ -23,7 +23,7 @@ computador.
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Prisma-336791?logo=postgresql&logoColor=white)
 ![License](https://img.shields.io/badge/código--fonte-privado-lightgrey)
 
-**Curtiu o projeto? Deixa uma estrela aqui em cima — isso ajuda muito!**
+**Curtiu o projeto? Deixa uma estrela aqui em cima, isso ajuda muito!**
 
 </div>
 
@@ -38,7 +38,7 @@ uma estrela.
 
 > O código-fonte completo é privado (é um produto comercial em produção,
 > com dados reais de clientes rodando nele). Este repo **não** contém o
-> código da aplicação — só a documentação pública do projeto.
+> código da aplicação: só a documentação pública do projeto.
 
 ---
 
@@ -47,13 +47,13 @@ uma estrela.
 Ferramentas de diagnóstico tradicionais adoram te dar um "certificado de
 saúde" bonito mesmo quando não conseguiram medir metade do equipamento.
 Sem elevação de administrador, sem sensor disponível, com antivírus
-bloqueando alguma coisa — o resultado costuma virar "tudo OK" por padrão.
+bloqueando alguma coisa, o resultado costuma virar "tudo OK" por padrão.
 
 O PcDiag foi construído ao redor de uma regra simples:
 
 > **Ausência de dado nunca vira aprovação.**
 
-Se uma métrica não pôde ser medida, o laudo mostra isso explicitamente —
+Se uma métrica não pôde ser medida, o laudo mostra isso explicitamente:
 nunca aparece como "verde" por omissão.
 
 ---
@@ -66,19 +66,19 @@ nunca aparece como "verde" por omissão.
   dispositivos/drivers, rede, segurança, bateria, eventos do Windows,
   performance e teste de carga.
 - **Cross-check entre fontes independentes** para o mesmo fato (ex: núcleos
-  de CPU, RAM total, saúde de disco) — quando duas fontes discordam, as
+  de CPU, RAM total, saúde de disco): quando duas fontes discordam, as
   duas leituras vão para o relatório e a confiança cai, em vez de escolher
   uma silenciosamente.
 - **Confiança calculada, nunca inventada**: cada achado carrega um
-  percentual derivado de uma função explícita e testada — nenhuma leitura
+  percentual derivado de uma função explícita e testada: nenhuma leitura
   de software sobre hardware de terceiro sai como 100% de certeza.
 - **Teste de carga real** de CPU e GPU (código de máquina montado em tempo
   de execução, sem depender de DirectX/CUDA/OpenCL) com amostragem de
-  temperatura, clock e consumo a cada segundo — a curva térmica é o que
+  temperatura, clock e consumo a cada segundo. A curva térmica é o que
   separa "esquentou e estabilizou" de "perdeu desempenho por superaquecer".
 - **Causa provável só com evidência**: o motor de correlação nunca "chuta"
   uma causa sem lastro nos sintomas coletados.
-- **Somente leitura por padrão** — nada é escrito no equipamento fora da
+- **Somente leitura por padrão**: nada é escrito no equipamento fora da
   pasta do próprio laudo; carga de CPU/disco exige flag explícita.
 - **276 testes automatizados** garantindo a lógica de diagnóstico, rodando
   contra inventários sintéticos (sem precisar de hardware real para validar).
@@ -103,7 +103,7 @@ nunca aparece como "verde" por omissão.
 - Acesso por link pessoal, **sem precisar criar conta**.
 - Acompanhamento visual do reparo (recebido → em análise → aguardando
   decisão → em reparo), com "cards" de problema explicando o quê, onde e
-  o quanto é urgente — em linguagem simples, sem jargão técnico.
+  o quanto é urgente, em linguagem simples, sem jargão técnico.
 - Fotos de evidência de cada item, com comparação antes/depois.
 - Orçamento item a item: o cliente aprova ou recusa cada reparo
   individualmente, com assinatura digital.
@@ -112,7 +112,7 @@ nunca aparece como "verde" por omissão.
 ### Ferramentas públicas gratuitas
 
 Testes rápidos de hardware direto do navegador, sem instalar nada e sem
-login — pensados para quem só quer confirmar se teclado, câmera ou áudio
+login, pensados para quem só quer confirmar se teclado, câmera ou áudio
 estão funcionando antes de levar o equipamento à assistência:
 
 - [Teste de teclado](https://tech-broswer.vercel.app/ferramentas/teclado)
@@ -123,7 +123,7 @@ estão funcionando antes de levar o equipamento à assistência:
 
 ## Como o diagnóstico funciona por dentro
 
-O motor segue um pipeline em estágios bem separados — cada peça só faz uma
+O motor segue um pipeline em estágios bem separados: cada peça só faz uma
 coisa, o que permite testar a lógica de diagnóstico inteira sem precisar
 de hardware real:
 
@@ -147,7 +147,7 @@ determinística e independente de hardware físico.
 
 | Camada | Tecnologias |
 |---|---|
-| Motor de diagnóstico | C# sobre .NET (compila só com o `csc.exe` nativo do Windows — sem SDK, sem MSBuild) |
+| Motor de diagnóstico | C# sobre .NET (compila só com o `csc.exe` nativo do Windows, sem SDK, sem MSBuild) |
 | Sensores de hardware | LibreHardwareMonitorLib, WMI, APIs nativas do Windows |
 | Dashboard / API | Next.js 14 (App Router), React 18, TypeScript |
 | Dados | PostgreSQL + Prisma ORM |
@@ -162,11 +162,11 @@ determinística e independente de hardware físico.
 ## Segurança e privacidade por padrão
 
 - O motor de diagnóstico **não coleta senha, token, cookie, histórico de
-  navegação ou conteúdo de arquivo** — só telemetria de hardware/sistema.
+  navegação ou conteúdo de arquivo**, só telemetria de hardware/sistema.
 - Flag `--privacy-safe` mascara serial, hostname, usuário, MAC e IP no
   laudo.
 - Processos externos chamados por allowlist fixo e caminho absoluto (sem
-  shell) — fecha injeção de comando e sequestro de PATH.
+  shell), fecha injeção de comando e sequestro de PATH.
 - Cabeçalhos de segurança aplicados em todas as respostas do dashboard.
 
 ---
@@ -175,7 +175,7 @@ determinística e independente de hardware físico.
 
 Esse projeto nasceu para resolver um problema real de assistências
 técnicas: dar um diagnóstico **honesto**, e não só bonito. Se a ideia fez
-sentido pra você, deixa uma estrela no repositório — isso ajuda o projeto
+sentido pra você, deixa uma estrela no repositório, isso ajuda o projeto
 a ser descoberto por mais gente.
 
 Feito por [**Gusmares**](https://github.com/Gusmares).

@@ -9,6 +9,6 @@ de dados) é **privado e proprietário**, não está incluído aqui e todos os
 direitos sobre ele são reservados ao autor.
 
 Todo o conteúdo deste repositório (README, textos e imagens) é
-disponibilizado apenas para fins de divulgação do projeto — © Gusmares.
+disponibilizado apenas para fins de divulgação do projeto. © Gusmares.
 Não é permitido reutilizar as imagens ou textos como se fossem de outro
 produto ou projeto.
