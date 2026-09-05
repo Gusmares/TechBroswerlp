@@ -17,12 +17,13 @@ computador.
 [Testar áudio](https://tech-broswer.vercel.app/ferramentas/som) ·
 [Código do motor de diagnóstico](pcdiag-engine/)
 
+[![Stars](https://img.shields.io/github/stars/Gusmares/TechBroswerlp?style=social)](https://github.com/Gusmares/TechBroswerlp/stargazers)
+[![License](https://img.shields.io/badge/motor%20de%20diagn%C3%B3stico-PolyForm%20Noncommercial-blue)](LICENSE.md)
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento%20ativo-brightgreen)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)
 ![C%23](https://img.shields.io/badge/C%23-.NET-239120?logo=csharp)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Prisma-336791?logo=postgresql&logoColor=white)
-![License](https://img.shields.io/badge/motor%20de%20diagn%C3%B3stico-open%20source-informational)
 
 **Curtiu o projeto? Deixa uma estrela aqui em cima, isso ajuda muito!**
 
